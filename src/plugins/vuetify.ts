@@ -1,16 +1,16 @@
-import Vue from 'vue'
-import Vuetify from 'vuetify/lib'
-import 'vuetify/src/stylus/app.styl'
+import Vue from 'vue';
+import Vuetify from 'vuetify';
+import 'vuetify/src/stylus';
 
 Vue.use(Vuetify, {
   theme: {
-    primary: '#ee44aa',
-    secondary: '#424242',
+    primary: '#3E83A8',
+    secondary: '#2A2A2E',
     accent: '#82B1FF',
-    error: '#FF5252',
+    error: '#be1622',
     info: '#2196F3',
     success: '#4CAF50',
-    warning: '#FFC107'
+    warning: '#FFC107',
   },
-  iconfont: 'fa4',
-})
+  iconfont: 'fa5',
+});

@@ -3,23 +3,23 @@ import { storiesOf } from '@storybook/vue'
 import { action } from '@storybook/addon-actions'
 import { linkTo } from '@storybook/addon-links'
 
-import MyButton from '../components/MyButton.vue'
+import UKJPButton from '../components/UKJPButton.vue'
 
 storiesOf('Button', module)
   .add('with text', () => ({
-    components: { MyButton },
-    template: '<my-button @click="action">Hello Button</my-button>',
+    components: { UKJPButton },
+    template: '<ukjp-button @click="action">Hello Button</ukjp-button>',
     methods: { action: action('clicked') }
   }))
   .add('with JSX', () => ({
-    components: { MyButton },
+    components: { UKJPButton },
     render() {
-      return <my-button onClick={this.action}>With JSX</my-button>;
+      return <ukjp-button onClick={this.action}>With JSX</ukjp-button>;
     },
     methods: { action: linkTo('Button', 'with some emoji') }
   }))
   .add('with some emoji', () => ({
-    components: { MyButton },
-    template: '<my-button @click="action">😀 😎 👍 💯</my-button>',
+    components: {  },
+    template: '<ukjp-button @click="action">😀 😎 👍 💯</ukjp-button>',
     methods: { action: action('clicked') }
   }))
